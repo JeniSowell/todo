@@ -1,0 +1,5 @@
+{
+  "@quasar/apollo": {
+    "graphql_uri": "https://todoquasar.hasura.app/v1/graphql"
+  }
+}

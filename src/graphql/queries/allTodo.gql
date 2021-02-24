@@ -1,0 +1,8 @@
+  query allTodo{
+    todo{
+      id
+      name
+      description
+      is_completed
+    }
+  }
