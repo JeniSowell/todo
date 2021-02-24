@@ -1,12 +1,13 @@
-  const ADD_TODO = gql `
-    mutation ($todo_string: String!) {
-    insert_todo(objects: {name: $todo_string}) {
-      affected_rows
-      returning {
-        id
-        name
-        description
-      }
+mutation ($name: String $description: String) {
+  insert_todo(objects: {
+    name: $name,
+    description: $description
+  }) {
+    affected_rows
+    returning {
+      id
+      name
+      description
     }
   }
-  `;
+}
